@@ -7,7 +7,6 @@ class Pokemon
     @type = type
     @hp = hp
     @db = db
-    db.execute("ALTER TABLE pokemon ADD DEFAULT 60 FOR hp")
   end
   
   def self.save(name, type, db)
